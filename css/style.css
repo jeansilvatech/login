@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color:  #f12711;
+    transition: 900ms;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f12711;  /* fallback for old browsers */
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+form{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: enter 6s ease-in-out;
+}
+@keyframes enter {
+    0%{
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 1);
+        opacity: 0;
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 400px;
+        opacity: 1;
+    }
+    
+}
+form .icon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+form .icon i{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+form .icon p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 350px;
+    letter-spacing: 4px;
+    color: white;
+}
+form .user{
+    margin: 10px 0;
+}
+form .password{
+    margin: 10px 0;
+}
+#label-password{
+    margin-right: 16.4px;
+}
+form label{
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+form input{
+    padding: 15px 5px;
+    border: none;
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+form input:hover{
+    opacity: 1;
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+input:focus,
+input:active{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.buttons button{
+    margin-top: 20px;
+    width: 296px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    opacity: 0.5;
+    color: white;
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button:hover{
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 1;
+}
+.buttons .google{
+    background: white;
+    color: #1C1C1C;
+}
+.icon-social{
+    width: 20px;
+    margin-right: 5px;
+}
+.buttons .facebook{
+    background: white;
+    color: #1C1C1C;
+}
+
+@media(max-width:480px){
+    body{
+        background-position-x: -500px;
+    }
+    form{
+        width: 100vw;
+        animation: enterMobile 5s ease-in-out;
+    }
+    @keyframes enterMobile{
+        0%{
+            width: 400px;
+            opacity: 0;
+        }
+        100%{
+            width: 100vw;
+            opacity: 1;
+        }
+    }
+}
