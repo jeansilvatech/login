@@ -68,24 +68,24 @@ form .user{
     width: 300px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
 }
 form .password{
     margin: 10px 0;
     width: 300px;
     display: flex;
     align-items: center;
-    justify-content: start;
-}
-#label-password{
-    padding-right: 16px;
+    justify-content: space-around;
 }
 form label{
-    font-size: 25px;
-    padding: 5px;
+    font-size: 20px;
+    padding-right: 10px;
     text-align: center;
-    width: 100px;
 }
+#label-user{
+    padding-right: 10px;
+}
+
 form input{
     padding: 15px 5px;
     border: none;
