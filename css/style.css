@@ -62,7 +62,7 @@ form .icon p{
     text-align: center;
     margin-bottom: 40px;
     width: 300px;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     color: white;
 }
 form .user{
@@ -111,7 +111,9 @@ input::placeholder{
     color: white;
 }
 span{
+    letter-spacing: 12px;
     animation: color 5s infinite;
+    text-align: center;
 }
 @keyframes color {
     0%{
