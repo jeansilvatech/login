@@ -65,12 +65,20 @@ form .icon p{
 }
 form .user{
     margin: 10px 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 form .password{
     margin: 10px 0;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 #label-password{
-    margin-right: 16.4px;
+    padding-right: 16px;
 }
 form label{
     font-size: 25px;
@@ -102,10 +110,13 @@ input::placeholder{
 .buttons{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 300px;
 }
 .buttons button{
     margin-top: 20px;
-    width: 296px;
+    width: 286px;
     height: 50px;
     border-radius: 10px;
     font-size: 18px;
@@ -147,11 +158,9 @@ input::placeholder{
     }
     @keyframes enterMobile{
         0%{
-            width: 400px;
             opacity: 0;
         }
         100%{
-            width: 100vw;
             opacity: 1;
         }
     }
