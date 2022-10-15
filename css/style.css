@@ -14,7 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f12711;  /* fallback for old browsers */
+    background: #1C1C1C;  /* fallback for old browsers */
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,6 +30,7 @@ form{
     justify-content: center;
     animation: enter 6s ease-in-out;
 }
+
 @keyframes enter {
     0%{
         width: 100vw;
@@ -54,6 +55,7 @@ form .icon{
 form .icon i{
     font-size: 45px;
     margin-bottom: 20px;
+    animation: color 5s infinite;
 }
 form .icon p{
     font-size: 20px;
@@ -89,23 +91,48 @@ form label{
 form input{
     padding: 15px 5px;
     border: none;
-    background: #f12711; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #f12711;
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+    background: linear-gradient(to right, #f12711, #f5af19); 
     color: white;
     border-radius: 10px;
     opacity: 0.5;
 }
 form input:hover{
     opacity: 1;
-    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #f5af19, #f12711); 
 }
 input:focus,
 input:active{
     outline: none;
+    opacity: 1;
 }
 input::placeholder{
     color: white;
+}
+span{
+    animation: color 5s infinite;
+}
+@keyframes color {
+    0%{
+        color: #18b1d1;
+    }
+    20%{
+        color:#1184e9
+    }
+    40%{
+        color:#ab47bb
+    }
+    60%{
+        color:#d22e61
+    }
+    80%{
+        color:#FFFF00
+    }
+    100%{
+        color: #18b1d1;
+    }
+    
 }
 .buttons{
     display: flex;
@@ -130,11 +157,13 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .buttons button:hover{
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 1;
 }
+
 .buttons .google{
     background: white;
     color: #1C1C1C;
