@@ -147,6 +147,13 @@ input::placeholder{
     background: white;
     color: #1C1C1C;
 }
+.line{
+    width: 290px;
+    margin-top: 20px;
+    height:1px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 @media(max-width:480px){
     body{
