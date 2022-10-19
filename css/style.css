@@ -28,7 +28,7 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: enter 6s ease-in-out;
+    animation: enter 5s ease-in-out;
 }
 
 @keyframes enter {
@@ -81,6 +81,7 @@ form .password{
 }
 form label{
     font-size: 20px;
+    width: 63px;
     padding-right: 10px;
     text-align: center;
 }
@@ -185,7 +186,26 @@ span{
     border-radius: 50%;
     background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+.btn-registration, .btn-back {
+    cursor: pointer;
+    margin-top: 10px;
+}
+.registration{
+    display: none;
+    flex-direction: column;
+    /* animation: registration 5s ease-in-out; */
+}
+strong{
+    letter-spacing: 3px;
+}
+@keyframes registration {
+    0%{
+       background-position-x: -800px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+}
 @media(max-width:480px){
     body{
         background-position-x: -500px;
