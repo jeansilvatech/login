@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color:  #f12711;
+    color:  #A9A9A9;
     transition: 900ms;
     overflow: hidden;
 }
@@ -63,7 +63,7 @@ form .icon p{
     margin-bottom: 40px;
     width: 300px;
     letter-spacing: 4px;
-    color: white;
+    color: #A9A9A9;
 }
 form .user{
     margin: 10px 0;
@@ -92,10 +92,11 @@ form label{
 form input{
     padding: 15px 5px;
     border: none;
-    background-color: #f12711;
-    background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
-    background: linear-gradient(to right, #f12711, #f5af19); 
-    color: white;
+    background-color:white;
+    /* background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+    background: linear-gradient(to right, #f12711, #f5af19);  */
+    color: #1C1C1C;
+    font-size: 15px;
     border-radius: 10px;
     opacity: 0.5;
 }
@@ -109,7 +110,7 @@ input:active{
     opacity: 1;
 }
 input::placeholder{
-    color: white;
+    color: #1C1C1C;
 }
 span{
     letter-spacing: 12px;
@@ -151,11 +152,10 @@ span{
     border-radius: 10px;
     font-size: 18px;
     border: none;
-    opacity: 0.5;
-    color: white;
-    background: #f12711; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f12711, #f5af19); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.9;
+    color: #363636;
+    background: white;
+    
     cursor: pointer;
     display: flex;
     align-items: center;
